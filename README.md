@@ -145,23 +145,24 @@ This ensured consistent segmentation across all KPIs and risk queries.
 
 **Key Insights & Results**
 
-Summary of Findings
-Area	KPI / Segment	Observation
-Portfolio Health	Default Rate	21.74% of loans defaulted
-Loan Grade	A → G	Default risk rises from 9.82% to 98.25%
-Income Band	<10k Income	86.96% default rate
-Income Band	Mid Income	34.39% default
-Income Band	High Income	18.70% default
-Age Bucket	18–24	23.09% default
-Employment Length	<1 year	24.67% default
-Employment Length	8+ years	18.25% default
-Credit History	<3 years	23.36% default
-Credit History	7–10 years	20.31% default
-Loan Intent	Medical / Education / Debt Consolidation	Highest default rates
-Interest Rate Bucket	>20%	88.06% default
-Interest Rate Bucket	<8%	9.17% default
-Affordability (PCT Income)	>60%	74.07% default
-Affordability (PCT Income)	<20%	33.32% default
+| Area | KPI / Segment | Observation |
+|------|---------------|-------------|
+| Portfolio Health | Default Rate | 21.74% of loans defaulted |
+| Loan Grade | A → G | Default risk rises from 9.82% to 98.25% |
+| Income Band | <10k Income | 86.96% default rate |
+| Income Band | Mid Income | 34.39% default |
+| Income Band | High Income | 18.70% default |
+| Age Bucket | 18–24 | 23.09% default |
+| Employment Length | <1 year | 24.67% default |
+| Employment Length | 8+ years | 18.25% default |
+| Credit History | <3 years | 23.36% default |
+| Credit History | 7–10 years | 20.31% default |
+| Loan Intent | Medical / Education / Debt Consolidation | Highest default rates |
+| Interest Rate Bucket | >20% | 88.06% default |
+| Interest Rate Bucket | <8% | 9.17% default |
+| Affordability (PCT Income) | >60% | 74.07% default |
+| Affordability (PCT Income) | <20% | 33.32% default |
+
 
 **Example SQL Query**
 -- Summary KPI
