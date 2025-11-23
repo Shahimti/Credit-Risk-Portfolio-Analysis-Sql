@@ -157,7 +157,7 @@ This ensured consistent segmentation across all KPIs and risk queries.
 | Employment Length | 8+ years | 18.25% default |
 | Credit History | <3 years | 23.36% default |
 | Credit History | 7–10 years | 20.31% default |
-| Loan Intent | Medical / Education / Debt Consolidation | Highest default rates |
+| Loan Intent | Debt Consolidation | Highest default rates |
 | Interest Rate Bucket | >20% | 88.06% default |
 | Interest Rate Bucket | <8% | 9.17% default |
 | Affordability (PCT Income) | >60% | 74.07% default |
@@ -165,7 +165,8 @@ This ensured consistent segmentation across all KPIs and risk queries.
 
 
 **Example SQL Query**
--- Summary KPI
+
+-- Summary KPIs
 SELECT
     COUNT(*) AS total_loans,
     SUM(CASE WHEN default_flag = 1 THEN 1 ELSE 0 END) AS total_defaults,
