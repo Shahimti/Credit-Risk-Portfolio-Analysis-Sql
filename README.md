@@ -167,6 +167,7 @@ This ensured consistent segmentation across all KPIs and risk queries.
 **Example SQL Query**
 
 -- Summary KPIs
+
 SELECT
     COUNT(*) AS total_loans,
     
@@ -181,7 +182,7 @@ SELECT
     ROUND(AVG(clean_person_emp_length), 2) AS avg_emp_years,
     
     ROUND(AVG(person_cred_hist_length), 2) AS avg_cred_hist_years
-    
+
 FROM loan_features;
 
 **Personal Reflection**
