@@ -163,6 +163,36 @@ This ensured consistent segmentation across all KPIs and risk queries.
 | Affordability (PCT Income) | >60% | 74.07% default |
 | Affordability (PCT Income) | <20% | 33.32% default |
 
+**Project Structure**
+
+├── Dataset/
+│   ├── credit_risk_dataset.csv
+│   └── Cleaned_Credit_Risk_dataset.csv
+│
+├── SQL/
+│   ├── Demographic KPIs.sql
+│   ├── Interest Rate KPIs.sql
+│   ├── Loan Features Table.sql
+│   ├── Portfolio KPIs.sql
+│   ├── Summary KPIs.sql
+│   └── Top 10 Loans.sql
+│
+├── SQL_Outputs/
+│   ├── Default rate by Age Bucket.csv
+│   ├── Default rate by Credit History Bucket.csv
+│   ├── Default rate by Employment Rate Bucket.csv
+│   ├── Default rate by Income Band.csv
+│   ├── Default rate by Interest Rate Bucket.csv
+│   ├── Default rate by Loan Grade.csv
+│   ├── Default rate by Loan Intent.csv
+│   ├── Default rate by pct Income Bucket.csv
+│   ├── Overall Default Rate.csv
+│   ├── Summary KPI.csv
+│   └── Top 10 loan.csv
+│
+└── README.md
+
+
 **Personal Reflection**
 
 This project helped me connect data cleaning, feature engineering, and SQL analytics into one cohesive workflow.
