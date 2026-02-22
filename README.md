@@ -32,7 +32,7 @@ All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, an
 
 Exported CSV outputs for each segmentation and portfolio KPI can be viewed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)**
 
-**Executive Summary**
+2. **Executive Summary**
 
 An analysis of 28,578 active loan accounts revealed:
 
@@ -48,7 +48,7 @@ Early-tenure borrowers (<1 year employment) and thin-file customers (<3 years cr
 
 The portfolio demonstrates clear segmentation opportunities for improved underwriting controls and risk-adjusted pricing strategies.
 
-**Data Structure Overview**
+3. **Data Structure Overview**
 
 The dataset represents customer-level and loan-level attributes across 28,578 loan accounts.
 
@@ -80,7 +80,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - loan_status (1 = default, 0 = repaid)
 
-##**Analytical Approach**##
+4. **Analytical Approach**
    
 **Data Preparation**
 
@@ -114,7 +114,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 A consolidated analytical view was built in MySQL to ensure consistent KPI reporting across all risk dimensions.
 
-**Key Portfolio Findings**
+5. **Key Portfolio Findings**
    
 Risk Dimension	Segment	Default Rate
 
