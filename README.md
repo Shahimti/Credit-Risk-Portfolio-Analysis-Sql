@@ -116,8 +116,8 @@ A consolidated analytical view was built in MySQL to ensure consistent KPI repor
 
 5. **Key Portfolio Findings**
 
-| Risk Dimension      | Segment                     | Default Rate |
-|---------------------|----------------------------|--------------|
+| Risk Dimension     | Segment                   | Default Rate |
+|--------------------|---------------------------|--------------|
 | Overall Portfolio  | All Loans                  | 21.74%       |
 | Loan Grade         | Grade A                    | 9.82%        |
 | Loan Grade         | Grade G                    | 98.25%       |
