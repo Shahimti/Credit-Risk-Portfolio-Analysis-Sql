@@ -115,21 +115,13 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 A consolidated analytical view was built in MySQL to ensure consistent KPI reporting across all risk dimensions.
 
 5. **Key Portfolio Findings**
-   
-Risk Dimension	Segment	Default Rate
-
-Overall Portfolio	All Loans	21.74%
-
-Loan Grade	Grade A	9.82%
-
-Loan Grade	Grade G	98.25%
-
-Income Band	<10k	86.96%
-
-Employment Length	<1 year	24.67%
-
-Credit History	<3 years	23.36%
-
-Interest Rate	>20%	88.06%
-
-Affordability	>60% income allocation	74.07%
+   | Risk Dimension      | Segment                     | Default Rate |
+|---------------------|----------------------------|--------------|
+| Overall Portfolio  | All Loans                  | 21.74%       |
+| Loan Grade         | Grade A                    | 9.82%        |
+| Loan Grade         | Grade G                    | 98.25%       |
+| Income Band        | <10k                       | 86.96%       |
+| Employment Length  | <1 year                    | 24.67%       |
+| Credit History     | <3 years                   | 23.36%       |
+| Interest Rate      | >20%                       | 88.06%       |
+| Affordability      | >60% income allocation     | 74.07%       |
