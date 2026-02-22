@@ -1,6 +1,6 @@
 Credit Risk Portfolio Analysis – Aurora Consumer Lending
 
-1. #Project Background#
+1. Project Background
 
 Aurora Consumer Lending is a mid-sized consumer finance company offering unsecured personal loans across multiple borrower segments.
 
