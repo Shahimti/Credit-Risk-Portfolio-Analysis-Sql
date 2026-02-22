@@ -1,6 +1,6 @@
 # Credit Risk Portfolio Analysis – Aurora Consumer Lending
 
-1. ## Project Background
+## Project Background
 
 Aurora Consumer Lending is a mid-sized consumer finance company offering unsecured personal loans across multiple borrower segments.
 
@@ -32,7 +32,7 @@ All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, an
 
 Exported CSV outputs for each segmentation and portfolio KPI can be viewed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)**
 
-2. ## Executive Summary
+## Executive Summary
 
 An analysis of 28,578 active loan accounts revealed:
 
@@ -48,7 +48,7 @@ Early-tenure borrowers (<1 year employment) and thin-file customers (<3 years cr
 
 The portfolio demonstrates clear segmentation opportunities for improved underwriting controls and risk-adjusted pricing strategies.
 
-3. ## Data Structure Overview 
+## Data Structure Overview 
 
 The dataset represents customer-level and loan-level attributes across 28,578 loan accounts.
 
@@ -80,7 +80,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - loan_status (1 = default, 0 = repaid)
 
-4. ## Analytical Approach
+## Analytical Approach
    
 ### Data Preparation
 
@@ -114,7 +114,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 A consolidated analytical view was built in MySQL to ensure consistent KPI reporting across all risk dimensions.
 
-5. ## Key Portfolio Findings
+## Key Portfolio Findings
 
 | Risk Dimension     | Segment                   | Default Rate |
 |--------------------|---------------------------|--------------|
@@ -127,7 +127,7 @@ A consolidated analytical view was built in MySQL to ensure consistent KPI repor
 | Interest Rate      | >20%                       | 88.06%       |
 | Affordability      | >60% income allocation     | 74.07%       |
 
-6. ## Risk Implications
+## Risk Implications
 
 The portfolio shows concentrated exposure in:
 
@@ -141,7 +141,7 @@ The portfolio shows concentrated exposure in:
 
 Without tighter underwriting controls, these segments materially increase loss volatility and portfolio instability.
 
-7. ## Strategic Recommendations
+## Strategic Recommendations
 
 Based on the uncovered insights, the following recommendations have been provided: 
 
@@ -155,7 +155,7 @@ Based on the uncovered insights, the following recommendations have been provide
 
 - Monitor thin-file borrower performance separately within ongoing credit risk reporting.
 
-8. ## Assumptions & Limitations
+## Assumptions & Limitations
 
 - Dataset is simulated for analytical demonstration purposes.
 
