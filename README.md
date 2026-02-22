@@ -14,7 +14,7 @@ As loan volume increased, leadership required a structured portfolio risk review
 
 This project simulates an internal credit risk analytics engagement designed to evaluate portfolio performance and identify high-risk borrower characteristics using SQL-driven segmentation.
 
-#Insights & Recommendations Delivered Across:
+Insights & Recommendations Delivered Across:
 
 Portfolio Health Assessment – Overall default exposure and concentration analysis
 
@@ -28,11 +28,11 @@ Pricing vs. Risk Alignment – Interest rate tiers and default correlation
 
 Underwriting Segmentation Strategy – Identification of structurally high-risk borrower groups
 
-All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, and risk analysis can be accessed here 
+All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, and risk analysis can be accessed [here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL)
 
-Exported CSV outputs for each segmentation and portfolio KPI can be viewed 
+Exported CSV outputs for each segmentation and portfolio KPI can be viewed [here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)
 
-2. #Executive Summary#
+2. Executive Summary
 
 An analysis of 28,578 active loan accounts revealed:
 
