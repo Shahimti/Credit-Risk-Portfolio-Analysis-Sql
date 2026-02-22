@@ -16,17 +16,17 @@ This project simulates an internal credit risk analytics engagement designed to 
 
 **Insights & Recommendations Delivered Across:**
 
-Portfolio Health Assessment – Overall default exposure and concentration analysis
+- Portfolio Health Assessment – Overall default exposure and concentration analysis
 
-Credit Grade Performance – Risk escalation across underwriting tiers (A–G)
+- Credit Grade Performance – Risk escalation across underwriting tiers (A–G)
 
-Affordability & Debt Stress – Payment-to-income thresholds and default sensitivity
+- Affordability & Debt Stress – Payment-to-income thresholds and default sensitivity
 
-Borrower Stability Indicators – Employment tenure and credit history risk patterns
+- Borrower Stability Indicators – Employment tenure and credit history risk patterns
 
-Pricing vs. Risk Alignment – Interest rate tiers and default correlation
+- Pricing vs. Risk Alignment – Interest rate tiers and default correlation
 
-Underwriting Segmentation Strategy – Identification of structurally high-risk borrower groups
+- Underwriting Segmentation Strategy – Identification of structurally high-risk borrower groups
 
 All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, and risk analysis can be accessed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL)**
 
