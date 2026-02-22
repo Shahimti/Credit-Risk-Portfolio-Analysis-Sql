@@ -1,178 +1,135 @@
-**Credit Risk Analysis (SQL Project)**
+Credit Risk Portfolio Analysis – Aurora Consumer Lending
 
-Author: Shah Imtiaz
+1. #Project Background#
 
-Tools Used: MySQL Server, MySQL Workbench, Power BI (for data cleaning)
+Aurora Consumer Lending is a mid-sized consumer finance company offering unsecured personal loans across multiple borrower segments.
 
-Dataset: Kaggle – Credit Risk Dataset
+As loan volume increased, leadership required a structured portfolio risk review to answer three core questions:
 
-**Project Overview**
+  - What is the true default exposure across the portfolio?
 
-This project analyzes borrower behavior to understand which factors contribute most to credit default.Compared to typical SQL projects that 
-only show technical queries, the focus here is on business insight, risk segmentation, and credit behavior patterns.
+  - Which borrower segments drive disproportionate credit losses?
 
-The guiding question for this project was:
+  - How can underwriting and pricing strategy be improved using data?
 
-**“What characteristics separate high-risk borrowers from low-risk borrowers?”**
+This project simulates an internal credit risk analytics engagement designed to evaluate portfolio performance and identify high-risk borrower characteristics using SQL-driven segmentation.
 
-To answer this, the workflow included:
+#Insights & Recommendations Delivered Across:
 
-- Data cleaning using Power BI / Power Query
+Portfolio Health Assessment – Overall default exposure and concentration analysis
 
-- Feature engineering
+Credit Grade Performance – Risk escalation across underwriting tiers (A–G)
 
-- SQL-based bucketing and segmentation
+Affordability & Debt Stress – Payment-to-income thresholds and default sensitivity
 
-- Detailed risk pattern analysis
+Borrower Stability Indicators – Employment tenure and credit history risk patterns
 
-- Portfolio-level KPIs and borrower insights
+Pricing vs. Risk Alignment – Interest rate tiers and default correlation
 
-**Objective**
+Underwriting Segmentation Strategy – Identification of structurally high-risk borrower groups
 
-The project aims to:
+All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, and risk analysis can be accessed here 
 
-Clean and prepare 28,578 loan records
+Exported CSV outputs for each segmentation and portfolio KPI can be viewed 
 
-Engineer analytical features such as:
+2. #Executive Summary#
+
+An analysis of 28,578 active loan accounts revealed:
+
+21.74% portfolio default rate, representing material credit exposure.
+
+Severe risk concentration in lower credit grades — Grade G loans default at 98.25%, compared to 9.82% for Grade A.
+
+Borrowers allocating more than 60% of income to loan payments show 74.07% default rates, indicating affordability stress.
+
+High-interest loans (>20%) correlate with 88.06% default, suggesting pricing reflects — but does not mitigate — elevated risk.
+
+Early-tenure borrowers (<1 year employment) and thin-file customers (<3 years credit history) display structurally higher default patterns.
+
+The portfolio demonstrates clear segmentation opportunities for improved underwriting controls and risk-adjusted pricing strategies.
+
+3. Data Structure Overview
+
+The dataset represents customer-level and loan-level attributes across 28,578 loan accounts.
+
+#Borrower Attributes
+
+- Age
+
+- Income
+
+- Employment Length
+
+- Credit History Length
+
+- Home Ownership Status
+
+#Loan Attributes
+
+- Loan Amount
+
+- Loan Grade (A–G)
+
+- Interest Rate
+
+- Loan Intent
+
+- Payment-to-Income Ratio
+
+- Target Variable
+
+- loan_status (1 = default, 0 = repaid)
+
+4. Analytical Approach
+   
+#Data Preparation
+
+- Cleaned and standardized raw loan records
+
+- Corrected inconsistent demographic values
+
+- Replaced invalid age and employment entries using median-based imputation
+
+- Standardized financial data types for accurate aggregation
+
+#SQL-Based Feature Engineering
+
+- Created segmentation buckets to enable structured portfolio analysis:
 
 - Age buckets
 
 - Income bands
 
-- Employment length buckets
+- Employment length bands
 
-- Interest rate buckets
+- Credit history bands
 
-- Credit history buckets
+- Interest rate tiers
 
-- Affordability (PCT income buckets)
+- Payment-to-income tiers
 
-- Build SQL segmentation models
+- Loan grade numeric scoring
 
-- Calculate portfolio and segment-level risk metrics
+- Debt-to-income recalculation
 
-- Identify borrower groups with the highest default probability
+A consolidated analytical view was built in MySQL to ensure consistent KPI reporting across all risk dimensions.
 
-**Dataset Summary**
+5. #Key Portfolio Findings
+   
+Risk Dimension	Segment	Default Rate
 
-#Customer-Level Features:
+Overall Portfolio	All Loans	21.74%
 
-- age
+Loan Grade	Grade A	9.82%
 
-- income
+Loan Grade	Grade G	98.25%
 
-- person_home_ownership
+Income Band	<10k	86.96%
 
-- clean_person_emp_length
+Employment Length	<1 year	24.67%
 
-- person_cred_hist_length
+Credit History	<3 years	23.36%
 
-- Loan Features
+Interest Rate	>20%	88.06%
 
-- loan_intent
-
-- loan_grade (A–G)
-
-- loan_amnt
-
-- loan_int_rate
-
-- pct_income
-
-- Target Variable
-
-- default_flag (1 = defaulted, 0 = repaid)
-
-#Derived Features (Engineered)
-
-- age_bucket
-
-- income_band
-
-- emp_length_bucket
-
-- cred_hist_bucket
-
-- int_rate_bucket
-
-- pct_income_bucket
-
-- debt_to_income
-
-- loan_grade_score
-
-**Data Cleaning Process (Power BI / Power Query)**
-
-- Initial data cleaning was completed in Power BI before loading the final dataset into MySQL.
-
-#Key steps included:
-
-- Handling missing or inconsistent values
-
-- Replacing incorrect ages and employment lengths with median values
-
-- Converting financial fields to numeric types
-
-- Standardizing categorical columns
-
-- Creating segmentation buckets (income, age, interest rate, credit history)
-
-- Ensuring consistent binary encoding for default_flag
-
-**Feature Engineering (SQL View)**
-
-A master SQL view was created to combine all engineered features into a single analytical table.
-
-#This view included:
-
-- Age bucket
-
-- Income band
-
-- Employment length bucket
-
-- Credit history bucket
-
-- Interest rate bucket
-
-- Affordability (PCT income bucket)
-
-- Debt-to-income
-
-- Loan grade numeric score
-
-This ensured consistent segmentation across all KPIs and risk queries.
-
-**Key Insights & Results**
-
-| Area | KPI / Segment | Observation |
-|------|---------------|-------------|
-| Portfolio Health | Default Rate | 21.74% of loans defaulted |
-| Loan Grade | A → G | Default risk rises from 9.82% to 98.25% |
-| Income Band | <10k Income | 86.96% default rate |
-| Income Band | Mid Income | 34.39% default |
-| Income Band | High Income | 18.70% default |
-| Age Bucket | 18–24 | 23.09% default |
-| Employment Length | <1 year | 24.67% default |
-| Employment Length | 8+ years | 18.25% default |
-| Credit History | <3 years | 23.36% default |
-| Credit History | 7–10 years | 20.31% default |
-| Loan Intent | Debt Consolidation | Highest default rates |
-| Interest Rate Bucket | >20% | 88.06% default |
-| Interest Rate Bucket | <8% | 9.17% default |
-| Affordability (PCT Income) | >60% | 74.07% default |
-| Affordability (PCT Income) | <20% | 33.32% default |
-
-**Files in Repository**
-
-This repository contains the following files:
-
-README.md — Project documentation
-
-Dataset — Contains the original Kaggle credit risk dataset and the fully cleaned version used for SQL analysis.
-
-SQL — Includes all MySQL scripts used for feature engineering, KPI calculations, segmentation queries, and portfolio analysis.
-
-SQL_Outputs — Stores the output CSV files generated from SQL queries—these show all risk metrics, segment defaults, and key portfolio insights
-
-
+Affordability	>60% income allocation	74.07%
