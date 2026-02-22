@@ -1,6 +1,6 @@
-**Credit Risk Portfolio Analysis – Aurora Consumer Lending**
+# Credit Risk Portfolio Analysis – Aurora Consumer Lending
 
-1. **Project Background**
+1. ## Project Background
 
 Aurora Consumer Lending is a mid-sized consumer finance company offering unsecured personal loans across multiple borrower segments.
 
@@ -32,7 +32,7 @@ All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, an
 
 Exported CSV outputs for each segmentation and portfolio KPI can be viewed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)**
 
-2.______ **Executive Summary**_____________________________________________________________________________________________________________________________________________________________
+2. ## Executive Summary
 
 An analysis of 28,578 active loan accounts revealed:
 
@@ -48,11 +48,11 @@ Early-tenure borrowers (<1 year employment) and thin-file customers (<3 years cr
 
 The portfolio demonstrates clear segmentation opportunities for improved underwriting controls and risk-adjusted pricing strategies.
 
-3. **Data Structure Overview**
+3. ## Data Structure Overview 
 
 The dataset represents customer-level and loan-level attributes across 28,578 loan accounts.
 
-**Borrower Attributes**
+### Borrower Attributes
 
 - Age
 
@@ -64,7 +64,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - Home Ownership Status
 
-**Loan Attributes**
+### Loan Attributes
 
 - Loan Amount
 
@@ -80,9 +80,9 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - loan_status (1 = default, 0 = repaid)
 
-4. **Analytical Approach**
+4. ## Analytical Approach
    
-**Data Preparation**
+### Data Preparation
 
 - Cleaned and standardized raw loan records
 
@@ -92,7 +92,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - Standardized financial data types for accurate aggregation
 
-**SQL-Based Feature Engineering**
+### SQL-Based Feature Engineering
 
 - Created segmentation buckets to enable structured portfolio analysis:
 
@@ -114,7 +114,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 A consolidated analytical view was built in MySQL to ensure consistent KPI reporting across all risk dimensions.
 
-5. **Key Portfolio Findings**
+5. ## Key Portfolio Findings
 
 | Risk Dimension     | Segment                   | Default Rate |
 |--------------------|---------------------------|--------------|
@@ -127,7 +127,7 @@ A consolidated analytical view was built in MySQL to ensure consistent KPI repor
 | Interest Rate      | >20%                       | 88.06%       |
 | Affordability      | >60% income allocation     | 74.07%       |
 
-6. **Risk Implications**
+6. ## Risk Implications
 
 The portfolio shows concentrated exposure in:
 
@@ -141,7 +141,9 @@ The portfolio shows concentrated exposure in:
 
 Without tighter underwriting controls, these segments materially increase loss volatility and portfolio instability.
 
-7. **Strategic Recommendations**
+7. ## Strategic Recommendations
+
+Based on the uncovered insights, the following recommendations have been provided: 
 
 - Introduce stricter underwriting thresholds for borrowers exceeding 50% income allocation.
 
@@ -152,5 +154,15 @@ Without tighter underwriting controls, these segments materially increase loss v
 - Re-evaluate risk-adjusted pricing to ensure yield compensates for elevated loss probability.
 
 - Monitor thin-file borrower performance separately within ongoing credit risk reporting.
+
+8. ## Assumptions & Limitations
+
+- Dataset is simulated for analytical demonstration purposes.
+
+- Macroeconomic variables were not included.
+
+- Time-series default migration analysis was not performed.
+
+- Loss Given Default (LGD) and Expected Loss modeling were outside scope.
 
   
