@@ -1,6 +1,6 @@
 **Credit Risk Portfolio Analysis – Aurora Consumer Lending**
 
-##Project Background
+**Project Background**
 
 Aurora Consumer Lending is a mid-sized consumer finance company offering unsecured personal loans across multiple borrower segments.
 
@@ -38,11 +38,11 @@ An analysis of 28,578 active loan accounts revealed:
 
 21.74% portfolio default rate, representing material credit exposure.
 
-Severe risk concentration in lower credit grades — Grade G loans default at 98.25%, compared to 9.82% for Grade A.
+Severe risk concentration in lower credit grades - Grade G loans default at 98.25%, compared to 9.82% for Grade A.
 
 Borrowers allocating more than 60% of income to loan payments show 74.07% default rates, indicating affordability stress.
 
-High-interest loans (>20%) correlate with 88.06% default, suggesting pricing reflects — but does not mitigate — elevated risk.
+High-interest loans (>20%) correlate with 88.06% default, suggesting pricing reflects - but does not mitigate elevated risk.
 
 Early-tenure borrowers (<1 year employment) and thin-file customers (<3 years credit history) display structurally higher default patterns.
 
@@ -80,7 +80,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - loan_status (1 = default, 0 = repaid)
 
-**Analytical Approach**
+##**Analytical Approach**##
    
 **Data Preparation**
 
