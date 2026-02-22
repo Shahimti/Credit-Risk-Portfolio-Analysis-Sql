@@ -33,7 +33,7 @@ All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, an
 Exported CSV outputs for each segmentation and portfolio KPI can be viewed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)**
 
 2. **Executive Summary**
-------------------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________________________________________________
 An analysis of 28,578 active loan accounts revealed:
 
 21.74% portfolio default rate, representing material credit exposure.
