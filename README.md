@@ -1,6 +1,6 @@
-Credit Risk Portfolio Analysis – Aurora Consumer Lending
+**Credit Risk Portfolio Analysis – Aurora Consumer Lending**
 
-#Project Background
+**Project Background**
 
 Aurora Consumer Lending is a mid-sized consumer finance company offering unsecured personal loans across multiple borrower segments.
 
@@ -14,7 +14,7 @@ As loan volume increased, leadership required a structured portfolio risk review
 
 This project simulates an internal credit risk analytics engagement designed to evaluate portfolio performance and identify high-risk borrower characteristics using SQL-driven segmentation.
 
-Insights & Recommendations Delivered Across:
+**Insights & Recommendations Delivered Across:**
 
 Portfolio Health Assessment – Overall default exposure and concentration analysis
 
@@ -28,11 +28,11 @@ Pricing vs. Risk Alignment – Interest rate tiers and default correlation
 
 Underwriting Segmentation Strategy – Identification of structurally high-risk borrower groups
 
-All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, and risk analysis can be accessed [here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL)
+All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, and risk analysis can be accessed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL)**
 
-Exported CSV outputs for each segmentation and portfolio KPI can be viewed [here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)
+Exported CSV outputs for each segmentation and portfolio KPI can be viewed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)**
 
-#Executive Summary
+**Executive Summary**
 
 An analysis of 28,578 active loan accounts revealed:
 
@@ -48,11 +48,11 @@ Early-tenure borrowers (<1 year employment) and thin-file customers (<3 years cr
 
 The portfolio demonstrates clear segmentation opportunities for improved underwriting controls and risk-adjusted pricing strategies.
 
-#Data Structure Overview
+**Data Structure Overview**
 
 The dataset represents customer-level and loan-level attributes across 28,578 loan accounts.
 
-#Borrower Attributes
+**Borrower Attributes**
 
 - Age
 
@@ -64,7 +64,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - Home Ownership Status
 
-#Loan Attributes
+**Loan Attributes**
 
 - Loan Amount
 
@@ -80,9 +80,9 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - loan_status (1 = default, 0 = repaid)
 
-#Analytical Approach
+**Analytical Approach**
    
-#Data Preparation
+**Data Preparation**
 
 - Cleaned and standardized raw loan records
 
@@ -92,7 +92,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 - Standardized financial data types for accurate aggregation
 
-#SQL-Based Feature Engineering
+**SQL-Based Feature Engineering**
 
 - Created segmentation buckets to enable structured portfolio analysis:
 
@@ -114,7 +114,7 @@ The dataset represents customer-level and loan-level attributes across 28,578 lo
 
 A consolidated analytical view was built in MySQL to ensure consistent KPI reporting across all risk dimensions.
 
-#Key Portfolio Findings
+**Key Portfolio Findings**
    
 Risk Dimension	Segment	Default Rate
 
