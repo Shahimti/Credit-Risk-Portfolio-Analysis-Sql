@@ -33,7 +33,7 @@ All MySQL scripts used for feature engineering, segmentation, portfolio KPIs, an
 Exported CSV outputs for each segmentation and portfolio KPI can be viewed **[here](https://github.com/Shahimti/Credit-Risk-Analysis/tree/main/SQL_Outputs)**
 
 2. **Executive Summary**
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 An analysis of 28,578 active loan accounts revealed:
 
 21.74% portfolio default rate, representing material credit exposure.
@@ -126,3 +126,31 @@ A consolidated analytical view was built in MySQL to ensure consistent KPI repor
 | Credit History     | <3 years                   | 23.36%       |
 | Interest Rate      | >20%                       | 88.06%       |
 | Affordability      | >60% income allocation     | 74.07%       |
+
+6. **Risk Implications**
+
+The portfolio shows concentrated exposure in:
+
+- Lower credit grades
+
+- High debt-to-income segments
+
+- High-interest pricing tiers
+
+- Thin-file borrowers
+
+Without tighter underwriting controls, these segments materially increase loss volatility and portfolio instability.
+
+7. **Strategic Recommendations**
+
+- Introduce stricter underwriting thresholds for borrowers exceeding 50% income allocation.
+
+- Cap portfolio exposure to Grade F and G segments.
+
+- Implement enhanced verification for borrowers with less than 1 year of employment.
+
+- Re-evaluate risk-adjusted pricing to ensure yield compensates for elevated loss probability.
+
+- Monitor thin-file borrower performance separately within ongoing credit risk reporting.
+
+  
