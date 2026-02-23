@@ -165,4 +165,33 @@ Based on the uncovered insights, the following recommendations have been provide
 
 - Loss Given Default (LGD) and Expected Loss modeling were outside scope.
 
-  
+## End Users & Business Application
+
+### Primary End Users
+
+This analysis is designed to support decision-making across Aurora Consumer Lending’s risk and underwriting functions:
+
+**Credit Risk Managers** – Monitoring portfolio-level default exposure and risk concentration.
+
+**Underwriting Teams** – Evaluating borrower approval thresholds based on affordability, credit grade, and employment stability.
+
+**Portfolio Monitoring Analysts** – Tracking high-risk segments and emerging default patterns.
+
+**Finance & Risk Committees** – Reviewing segment-level exposure during monthly performance reviews.
+
+### Business Applications
+
+The outputs of this project can be applied in: 
+
+**Underwriting Policy Reviews** 
+
+Simulating approval cutoffs (e.g., interest rate ≥ 16%, affordability ≥ 60%) to evaluate trade-offs between approval volume and default capture.
+
+**Exposure Management**
+
+Simulating approval cutoffs (e.g., interest rate ≥ 16%, affordability ≥ 60%) to evaluate trade-offs between approval volume and default capture.
+
+**Affordability Risk Controls**
+
+Flagging structurally high-risk borrowers exceeding sustainable payment-to-income thresholds.
+
