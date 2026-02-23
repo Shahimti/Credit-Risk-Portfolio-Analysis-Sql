@@ -173,7 +173,7 @@ This analysis is designed to support decision-making across Aurora Consumer Lend
 
 **Credit Risk Managers** – Monitoring portfolio-level default exposure and risk concentration.
 
-**Underwriting Teams** – Evaluating borrower approval thresholds based on affordability, credit grade, and employment stability.
+**Underwriting Teams** – Evaluating borrower approval thresholds based on affordability, credit grade and employment stability.
 
 **Portfolio Monitoring Analysts** – Tracking high-risk segments and emerging default patterns.
 
@@ -189,7 +189,7 @@ Simulating approval cutoffs (e.g., interest rate ≥ 16%, affordability ≥ 60%)
 
 **Exposure Management**
 
-Simulating approval cutoffs (e.g., interest rate ≥ 16%, affordability ≥ 60%) to evaluate trade-offs between approval volume and default capture.
+Identifying concentration risk in lower credit grades and high-debt segments to inform portfolio caps.
 
 **Affordability Risk Controls**
 
